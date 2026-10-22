@@ -26,7 +26,7 @@
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#sobre">Sobre Nós</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
-                    <!-- Botão de WhatsApp no Topo (Substitua o número abaixo pelo seu real) -->
+                    <!-- Botão de WhatsApp no Topo -->
                     <li>
                         <a href="https://wa.me/5581999999999?text=Olá,%20Forjex!%20Vim%20através%20do%20site." target="_blank" class="glass-btn btn-whatsapp-top">
                             <i class="fa-brands fa-whatsapp"></i> WhatsApp
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <!-- PÁGINA INICIAL (HERO COM PARTICLE DRIFT) -->
+    <!-- PÁGINA INICIAL (HERO COM PARTICLE DRIFT E CARTÕES 3D) -->
     <section id="inicio" class="hero">
         <canvas id="particleCanvas"></canvas>
         <div class="container hero-container">
@@ -53,19 +53,70 @@
                     <a href="#servicos" class="glass-btn">Nossos Serviços</a>
                 </div>
             </div>
-            <div class="hero-graphic">
-                <div class="code-card">
-                    <div class="card-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="filename">forjex.js</span>
+
+            <!-- ÁREA GRÁFICA COM OS CARTÕES 3D FLUTUANTES -->
+            <div class="hero-graphic-3d">
+                <!-- 1. Cartão de Logs do Servidor -->
+                <div class="floating-card card-logs">
+                    <div class="card-topbar">
+                        <div class="card-dots">
+                            <span class="dot-sm"></span>
+                            <span class="dot-sm"></span>
+                        </div>
+                        <span class="card-filename">server-logs — bash</span>
                     </div>
-                    <pre><code><span class="keyword">const</span> <span class="variable">forjex</span> = {
-  <span class="property">missao</span>: <span class="string">"Inovação e Tecnologia Web"</span>,
-  <span class="property">foco</span>: <span class="string">"Performance e UI/UX"</span>,
-  <span class="property">status</span>: <span class="string">"Pronto para escalar 🚀"</span>
-};</code></pre>
+                    <div class="card-body font-mono">
+                        <div class="log-row"><span class="log-time">14:02:11</span><span class="log-info">INFO</span><span>Service registry initialized</span></div>
+                        <div class="log-row"><span class="log-time">14:02:12</span><span class="log-info">INFO</span><span>Database connection established (pg_shard_01)</span></div>
+                        <div class="log-row"><span class="log-time">14:02:15</span><span class="log-warn">WARN</span><span>Latency spike detected in region: us-east-1</span></div>
+                        <div class="log-row"><span class="log-time">14:02:16</span><span class="log-debug">DEBUG</span><span>Re-routing traffic via mesh gateway</span></div>
+                        <div class="log-row"><span class="log-time">14:02:18</span><span class="log-info">INFO</span><span>Cache invalidated for key: user_sess_882</span></div>
+                        <div class="log-cursor">_</div>
+                    </div>
+                </div>
+
+                <!-- 2. Cartão de Código (middleware.ts) -->
+                <div class="floating-card card-code">
+                    <div class="card-topbar">
+                        <div class="card-dots">
+                            <span class="dot-sm red"></span>
+                            <span class="dot-sm yellow"></span>
+                            <span class="dot-sm green"></span>
+                        </div>
+                        <span class="card-filename">middleware.ts</span>
+                    </div>
+                    <div class="card-body font-mono code-content">
+                        <div class="code-line-group">
+                            <span class="code-purple">export const</span> <span class="code-blue">traceRequest</span> = <span class="code-purple">async</span> (req, res) =&gt; {<br>
+                            &nbsp;&nbsp;<span class="code-comment">// Initialize distributed trace</span><br>
+                            &nbsp;&nbsp;<span class="code-purple">const</span> span = <span class="code-yellow">Telemetry</span>.<span class="code-blue">startSpan</span>(<span class="code-green">'http_request'</span>);<br><br>
+                            &nbsp;&nbsp;<span class="code-purple">try</span> {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-purple">await</span> <span class="code-blue">next</span>();<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;span.<span class="code-blue">setStatus</span>({ code: <span class="code-green">'OK'</span> });<br>
+                            &nbsp;&nbsp;}<br>
+                            };
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Cartão de Métricas (Throughput) -->
+                <div class="floating-card card-metrics">
+                    <div class="metrics-header">
+                        <span class="metrics-title">Throughput</span>
+                        <span class="metrics-badge">▲ 12.4%</span>
+                    </div>
+                    <div class="metrics-chart">
+                        <div class="chart-bar" style="height: 30%;"></div>
+                        <div class="chart-bar" style="height: 50%;"></div>
+                        <div class="chart-bar" style="height: 40%;"></div>
+                        <div class="chart-bar" style="height: 70%;"></div>
+                        <div class="chart-bar active" style="height: 85%;"></div>
+                        <div class="chart-bar" style="height: 60%;"></div>
+                        <div class="chart-bar" style="height: 45%;"></div>
+                    </div>
+                    <div class="metrics-footer">
+                        <span>10:00</span><span>10:30</span><span>11:00</span>
+                    </div>
                 </div>
             </div>
         </div>

@@ -65,7 +65,7 @@ header {
 }
 
 .logo-img-footer {
-    height: 80px;
+    height: 65px;
     width: auto;
     display: block;
     margin: 0 auto;
@@ -112,7 +112,7 @@ header {
     color: var(--text-main);
 }
 
-/* LIGHT GLASS BUTTON (ESTILO ORIGINKIT ADAPTADO PARA CSS PURO) */
+/* LIGHT GLASS BUTTON */
 .glass-btn {
     display: inline-flex;
     align-items: center;
@@ -238,8 +238,166 @@ header {
     flex-wrap: wrap;
 }
 
-.hero-graphic {
+/* CARTÕES 3D FLUTUANTES (HERO) */
+.hero-graphic-3d {
+    position: relative;
     width: 100%;
+    height: 420px;
+    perspective: 1200px;
+}
+
+.floating-card {
+    position: absolute;
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card-logs {
+    left: 0px;
+    top: 20px;
+    width: 400px;
+    background: rgba(24, 28, 37, 0.85);
+    border: 1px solid var(--border);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    transform: rotateX(8deg) rotateY(-12deg) translateZ(-20px);
+}
+.card-logs:hover {
+    transform: rotateX(4deg) rotateY(-8deg) translateZ(0px) translateY(-8px);
+    border-color: rgba(226, 96, 36, 0.4);
+}
+
+.card-code {
+    left: 60px;
+    top: 90px;
+    width: 410px;
+    background: rgba(18, 21, 28, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    transform: rotateX(8deg) rotateY(-12deg) translateZ(10px);
+}
+.card-code:hover {
+    transform: rotateX(4deg) rotateY(-8deg) translateZ(30px) translateY(-10px);
+    border-color: var(--copper);
+}
+
+.card-metrics {
+    left: 280px;
+    top: 10px;
+    width: 260px;
+    height: 180px;
+    background: rgba(28, 34, 46, 0.9);
+    border: 1px solid rgba(226, 96, 36, 0.3);
+    box-shadow: 0 0 35px -5px rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    transform: rotateX(8deg) rotateY(-12deg) translateZ(50px);
+}
+.card-metrics:hover {
+    transform: rotateX(4deg) rotateY(-8deg) translateZ(70px) translateX(8px) translateY(-8px);
+    border-color: var(--copper);
+}
+
+.card-topbar {
+    height: 32px;
+    background: rgba(11, 13, 18, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 8px;
+}
+
+.card-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dot-sm {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+.dot-sm.red { background: rgba(239, 68, 68, 0.6); }
+.dot-sm.yellow { background: rgba(234, 179, 8, 0.6); }
+.dot-sm.green { background: rgba(34, 197, 94, 0.6); }
+
+.card-filename {
+    font-family: monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-left: 4px;
+}
+
+.card-body {
+    padding: 14px;
+    font-size: 10px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.log-row { display: flex; gap: 8px; margin-bottom: 3px; }
+.log-time { color: rgba(255, 255, 255, 0.3); }
+.log-info { color: rgba(34, 197, 94, 0.7); }
+.log-warn { color: rgba(234, 179, 8, 0.8); }
+.log-debug { color: rgba(56, 189, 248, 0.8); }
+.log-cursor { color: var(--text-muted); animation: pulse 1.5s infinite; margin-top: 4px; }
+
+.code-content { font-size: 11px; line-height: 1.5; color: #f1f5f9; padding: 12px 16px; }
+.code-purple { color: #c084fc; }
+.code-blue { color: #60a5fa; }
+.code-yellow { color: #facc15; }
+.code-green { color: #4ade80; }
+.code-comment { color: rgba(148, 163, 184, 0.5); }
+
+.metrics-header {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.metrics-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-main); }
+.metrics-badge { font-size: 10px; font-family: monospace; color: #4ade80; }
+
+.metrics-chart {
+    flex: 1;
+    padding: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 4px;
+}
+.chart-bar {
+    width: 100%;
+    background: rgba(226, 96, 36, 0.25);
+    border-radius: 2px;
+    transition: background 0.2s;
+}
+.chart-bar:hover { background: rgba(226, 96, 36, 0.5); }
+.chart-bar.active {
+    background: var(--copper);
+    box-shadow: 0 0 10px rgba(226, 96, 36, 0.6);
+}
+
+.metrics-footer {
+    padding: 0 12px 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    font-family: monospace;
+    color: var(--text-muted);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
 }
 
 /* ESTATÍSTICAS / MÉTRICAS */
@@ -270,58 +428,6 @@ header {
     color: var(--text-muted);
     font-size: 0.95rem;
 }
-
-/* CODE CARD VISUAL */
-.code-card {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    transition: transform 0.3s ease;
-}
-
-.code-card:hover {
-    transform: translateY(-5px);
-}
-
-.card-header {
-    background: var(--bg-card);
-    padding: 12px 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
-.dot.red { background: #ff5f56; }
-.dot.yellow { background: #ffbd2e; }
-.dot.green { background: #27c93f; }
-
-.filename {
-    margin-left: 8px;
-    font-size: 0.8rem;
-    color: var(--text-muted);
-}
-
-.code-card pre {
-    padding: 22px;
-    overflow-x: auto;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem;
-    color: #cbd5e1;
-}
-
-.keyword { color: #f97316; }
-.variable { color: #38bdf8; }
-.property { color: #34d399; }
-.string { color: #facc15; }
 
 /* SEÇÕES GERAIS */
 section {
@@ -658,7 +764,6 @@ section {
     box-shadow: 0 0 0 3px rgba(226, 96, 36, 0.15);
 }
 
-/* BOTÃO DE CONTATO WHATSAPP */
 .btn-whatsapp {
     background: #25d366;
     color: #fff;
@@ -711,6 +816,10 @@ footer p {
 }
 
 /* RESPONSIVO */
+@media (max-width: 992px) {
+    .hero-graphic-3d { display: none; }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;

@@ -27,7 +27,6 @@ if (hamburger && navMenu) {
     });
 }
 
-
 // ==========================================
 // 2. FORMULÁRIO DE CONTATO (WHATSAPP)
 // ==========================================
@@ -68,9 +67,8 @@ if (contactForm) {
     });
 }
 
-
 // ==========================================
-// 3. MOTOR WEBGL: PARTICLE DRIFT (ORIGINKIT)
+// 3. MOTOR WEBGL: PARTICLE DRIFT
 // ==========================================
 window.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('particleCanvas');
