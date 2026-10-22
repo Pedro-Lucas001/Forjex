@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forjex | Desenvolvimento Web & Soluções Tecnológicas</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo/logo 2.png" alt="Forjex Logo" class="logo-img">
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <!-- Botão de WhatsApp no Topo (Substitua o número abaixo pelo seu real) -->
+                    <li>
+                        <a href="https://wa.me/5581999999999?text=Olá,%20Forjex!%20Vim%20através%20do%20site." target="_blank" class="glass-btn btn-whatsapp-top">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </li>
+                    <li><a href="#contato" class="btn-nav">Orçamento</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- PÁGINA INICIAL (HERO COM PARTICLE DRIFT) -->
+    <section id="inicio" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Forjando o futuro digital do <span>seu negócio</span></h1>
+                <p>Criamos soluções tecnológicas de alto impacto, sites modernos e sistemas web sob medida desenhados para acelerar seus resultados e destacar sua marca no mercado.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="glass-btn glass-btn-primary">Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#servicos" class="glass-btn">Nossos Serviços</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="code-card">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">forjex.js</span>
+                    </div>
+                    <pre><code><span class="keyword">const</span> <span class="variable">forjex</span> = {
+  <span class="property">missao</span>: <span class="string">"Inovação e Tecnologia Web"</span>,
+  <span class="property">foco</span>: <span class="string">"Performance e UI/UX"</span>,
+  <span class="property">status</span>: <span class="string">"Pronto para escalar 🚀"</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE ESTATÍSTICAS / MÉTRICAS DE IMPACTO -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h2>100%</h2>
+                <p>Foco em Performance</p>
+            </div>
+            <div class="stat-item">
+                <h2>UI/UX</h2>
+                <p>Design Exclusivo</p>
+            </div>
+            <div class="stat-item">
+                <h2>24/7</h2>
+                <p>Sistemas Escaláveis</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE DIFERENCIAIS -->
+    <section id="diferenciais" class="differentials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Por que escolher a Forjex?</h2>
+                <p>Nossos pilares fundamentais para garantir excelência em cada entrega</p>
+            </div>
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <div class="diff-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Performance & Velocidade</h3>
+                    <p>Aplicações otimizadas para carregar instantaneamente, garantindo retenção de usuários e melhor ranqueamento.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Design Exclusivo & UI/UX</h3>
+                    <p>Interfaces limpas, modernas e focadas na experiência do usuário para transmitir autoridade e gerar conversões.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <h3>Soluções Sob Medida</h3>
+                    <p>Desenvolvimento flexível que se adapta perfeitamente ao modelo e às necessidades reais do seu negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Serviços e Soluções</h2>
+                <p>Tecnologia e criatividade unidas para entregar resultados sólidos</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites institucionais, landing pages de alta conversão e portfólios corporativos totalmente responsivos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Sistemas & Dashboards</h3>
+                    <p>Aplicações web customizadas e painéis administrativos inteligentes para otimizar o controle e a gestão operacional.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Automações & APIs</h3>
+                    <p>Integração de sistemas e automação de fluxos para eliminar gargalos e acelerar os processos da sua empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO "SOBRE NÓS" -->
+    <section id="sobre" class="about-agency">
+        <div class="container about-agency-container">
+            <div class="about-agency-text">
+                <span class="badge-tag"><span class="copper-dot"></span> Quem Somos</span>
+                <h2>Transformando operações e escalando marcas através da tecnologia</h2>
+                <p>A Forjex atua na vanguarda da criação e inovação digital. Ajudamos empresas a automatizar operações, adotar tecnologias modernas com um roadmap claro e transformar ideias complexas em resultados mensuráveis.</p>
+                <div class="about-checklist">
+                    <div class="check-item"><i class="fa-solid fa-check"></i> Roadmap tecnológico personalizado</div>
+                    <div class="check-item"><i class="fa-solid fa-check"></i> Foco absoluto em conversão e usabilidade</div>
+                    <div class="check-item"><i class="fa-solid fa-check"></i> Arquitetura preparada para o futuro</div>
+                </div>
+            </div>
+            <div class="about-agency-card">
+                <div class="mini-terminal">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">agencia.json</span>
+                    </div>
+                    <pre><code>{
+  <span class="property">"empresa"</span>: <span class="string">"Forjex"</span>,
+  <span class="property">"missao"</span>: <span class="string">"Inovação e Web"</span>,
+  <span class="property">"automacao"</span>: <span class="keyword">true</span>,
+  <span class="property">"resultado"</span>: <span class="string">"Escala real"</span>
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfólio de Projetos</h2>
+                <p>Conheça alguns dos projetos funcionais e aplicações autorais desenvolvidas com nosso padrão de qualidade</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img placeholder-1">
+                        <span class="tag-tech">React & Vite / API</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Crypto Dashboard Pro</h3>
+                        <p>Painel reativo em tempo real para monitoramento de ativos, cotações e métricas de mercado financeiro.</p>
+                        <a href="https://github.com" target="_blank" class="link-project">
+                            Acessar Aplicação <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img placeholder-2">
+                        <span class="tag-tech">Fullstack / Sistemas</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Gestão Operacional & PDV</h3>
+                        <p>Plataforma web voltada para controle de fluxo de caixa, gerenciamento de pedidos e automação de atendimento.</p>
+                        <a href="https://github.com" target="_blank" class="link-project">
+                            Ver Detalhes / Código <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vamos inovar juntos?</h2>
+                <p>Preencha os dados abaixo e conte-nos qual solução ou projeto você deseja construir</p>
+            </div>
+            <div class="contact-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Seu Nome</label>
+                        <input type="text" id="name" placeholder="Ex: Carlos Eduardo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail de Contato</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectType">O que você deseja desenvolver?</label>
+                        <input type="text" id="projectType" placeholder="Ex: Site institucional, Dashboard, Aplicativo..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Detalhes do Projeto / Ideia</label>
+                        <textarea id="message" rows="4" placeholder="Descreva brevemente o que você precisa..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="glass-btn glass-btn-primary btn-whatsapp btn-block">
+                        Enviar via WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logo/logo 2.png" alt="Forjex Logo" class="logo-img-footer">
+            </div>
+            <p>&copy; 2026 Forjex. Todos os direitos reservados. Criação, Inovação e Desenvolvimento Web.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
