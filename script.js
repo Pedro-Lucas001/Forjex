@@ -54,7 +54,7 @@ if (contactForm) {
         }
 
         // ⚠️ Substitua abaixo pelo seu número de WhatsApp com DDI e DDD (ex: 5581999999999)
-        const seuNumeroWhatsApp = "5581999999999"; 
+        const seuNumeroWhatsApp = "5581988434201"; 
 
         const textoMensagem = `*Olá, Forjex! Vim através do site institucional.*%0A%0A` +
                               `*Nome:* ${encodeURIComponent(name)}%0A` +
