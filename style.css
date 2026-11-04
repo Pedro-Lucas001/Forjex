@@ -54,7 +54,7 @@ header {
 }
 
 .logo-img {
-    height: 90px;
+    height: 38px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -65,7 +65,7 @@ header {
 }
 
 .logo-img-footer {
-    height: 65px;
+    height: 42px;
     width: auto;
     display: block;
     margin: 0 auto;
@@ -701,6 +701,12 @@ section {
     margin-bottom: 20px;
 }
 
+.portfolio-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
 .link-project {
     color: var(--copper);
     text-decoration: none;
@@ -713,6 +719,14 @@ section {
 
 .link-project:hover {
     text-decoration: underline;
+}
+
+.github-link {
+    color: var(--text-muted);
+}
+
+.github-link:hover {
+    color: var(--text-main);
 }
 
 /* CONTATO */
