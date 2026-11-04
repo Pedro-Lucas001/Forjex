@@ -54,7 +54,7 @@ header {
 }
 
 .logo-img {
-    height: 38px;
+    height: 90px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -65,7 +65,7 @@ header {
 }
 
 .logo-img-footer {
-    height: 42px;
+    height: 90px;
     width: auto;
     display: block;
     margin: 0 auto;
