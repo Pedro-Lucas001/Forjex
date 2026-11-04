@@ -1,7 +1,7 @@
 # 🚀 Forjex | Desenvolvimento Web & Soluções Tecnológicas
 
 <div align="center">
-  <img src="logo/logo.png" alt="Forjex Logo" width="180px">
+  <img src="logo/logo 2.png" alt="Forjex Logo" width="180px">
   <p><b>Forjando o futuro digital do seu negócio através de alta performance, design exclusivo e arquitetura moderna.</b></p>
 </div>
 
