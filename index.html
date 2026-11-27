@@ -226,51 +226,196 @@
         </div>
     </section>
 
-    <!-- PORTFÓLIO (COM DOIS LINKS: SITE AO VIVO E GITHUB) -->
+    <!-- PORTFÓLIO (SISTEMAS NO GITHUB & EM PRODUÇÃO) -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2>Portfólio de Projetos</h2>
-                <p>Conheça alguns dos projetos funcionais e aplicações autorais desenvolvidas com nosso padrão de qualidade</p>
+                <h2>Portfólio de Sistemas</h2>
+                <p>Conheça os sistemas completos e aplicações autorais publicados no nosso GitHub e em operação na web</p>
             </div>
             <div class="portfolio-grid">
-                <!-- Projeto 1 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-img placeholder-1">
-                        <span class="tag-tech">React & Vite / API</span>
+                <!-- Projeto 1: Planeta Lanches (gestao-pvd) -->
+                <article class="portfolio-item">
+                    <div class="portfolio-img cover-pdv">
+                        <div class="portfolio-cover-top">
+                            <span class="tag-tech">Sistemas & PDV</span>
+                            <span class="project-status status-live"><span class="status-dot"></span> Online</span>
+                        </div>
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-bar">
+                                <span class="preview-title"><i class="fa-solid fa-cash-register"></i> planeta-lanches · PDV & KDS</span>
+                                <span class="preview-pill accent-copper">Realtime</span>
+                            </div>
+                            <div class="preview-rows">
+                                <div class="preview-row">
+                                    <span class="row-id">#104</span>
+                                    <span class="row-label">Combo Duplo + Refri</span>
+                                    <span class="row-badge warn">Cozinha · 04m</span>
+                                </div>
+                                <div class="preview-row">
+                                    <span class="row-id">#105</span>
+                                    <span class="row-label">Pedido QR · Pix</span>
+                                    <span class="row-badge ok">Pronto</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Crypto Dashboard Pro</h3>
-                        <p>Painel reativo em tempo real para monitoramento de ativos, cotações e métricas de mercado financeiro.</p>
+                        <h3>Planeta Lanches — Gestão & PDV</h3>
+                        <p>Sistema operacional completo com PDV, KDS tático de cozinha em tempo real, autoatendimento via QR Code e Pix, DRE gerencial, fichas técnicas e auditoria em PostgreSQL.</p>
+                        <div class="portfolio-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Supabase</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Realtime</span>
+                        </div>
                         <div class="portfolio-links">
-                            <a href="https://crypto-dashboard-pro-blue.vercel.app" target="_blank" class="link-project">
-                                <i class="fa-solid fa-globe"></i> Ver Site
+                            <a href="https://gestao-pvd.vercel.app" target="_blank" rel="noopener noreferrer" class="link-project link-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Sistema
                             </a>
-                            <a href="https://github.com/Pedro-Lucas001/crypto-dashboard-pro" target="_blank" class="link-project github-link">
+                            <a href="https://github.com/Pedro-Lucas001/gestao-pvd" target="_blank" rel="noopener noreferrer" class="link-project github-link">
                                 <i class="fa-brands fa-github"></i> Código
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Projeto 2 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-img placeholder-2">
-                        <span class="tag-tech">Fullstack / Sistemas</span>
+                <!-- Projeto 2: Netuno Açaí (gestao-acai) -->
+                <article class="portfolio-item">
+                    <div class="portfolio-img cover-acai">
+                        <div class="portfolio-cover-top">
+                            <span class="tag-tech">PWA & Finanças</span>
+                            <span class="project-status status-live"><span class="status-dot"></span> Online</span>
+                        </div>
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-bar">
+                                <span class="preview-title"><i class="fa-solid fa-chart-line"></i> netuno-acai · Gestão</span>
+                                <span class="preview-pill accent-teal">Margem 48%</span>
+                            </div>
+                            <div class="preview-metrics">
+                                <div class="preview-kpi">
+                                    <span class="kpi-label">CMV / Ficha</span>
+                                    <strong class="kpi-val">Automático</strong>
+                                </div>
+                                <div class="preview-bars">
+                                    <span style="height: 45%"></span>
+                                    <span style="height: 68%"></span>
+                                    <span style="height: 55%"></span>
+                                    <span style="height: 88%" class="bar-highlight"></span>
+                                    <span style="height: 74%"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Gestão Operacional & PDV</h3>
-                        <p>Plataforma web voltada para controle de fluxo de caixa, gerenciamento de pedidos e automação de atendimento.</p>
+                        <h3>Netuno Açaí — Gestão Financeira</h3>
+                        <p>PWA instalável para gestão de vendas, insumos e estoque com cálculo automático de CMV e margem, venda rápida em 1 toque, despesas recorrentes e simulador de precificação.</p>
+                        <div class="portfolio-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Vite</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">PWA</span>
+                        </div>
                         <div class="portfolio-links">
-                            <a href="https://seu-site-no-ar-2.com" target="_blank" class="link-project">
-                                <i class="fa-solid fa-globe"></i> Ver Site
+                            <a href="https://gestao-acai-rho.vercel.app" target="_blank" rel="noopener noreferrer" class="link-project link-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Sistema
                             </a>
-                            <a href="https://github.com/Pedro-Lucas001" target="_blank" class="link-project github-link">
+                            <a href="https://github.com/Pedro-Lucas001/gestao-acai" target="_blank" rel="noopener noreferrer" class="link-project github-link">
                                 <i class="fa-brands fa-github"></i> Código
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
+
+                <!-- Projeto 3: Boopay (boopay) -->
+                <article class="portfolio-item">
+                    <div class="portfolio-img cover-boopay">
+                        <div class="portfolio-cover-top">
+                            <span class="tag-tech">IA & E-commerce</span>
+                            <span class="project-status status-repo"><i class="fa-solid fa-code-branch"></i> MVP Fullstack</span>
+                        </div>
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-bar">
+                                <span class="preview-title"><i class="fa-solid fa-robot"></i> boopay · AI Checkout</span>
+                                <span class="preview-pill accent-blue">Multiloja</span>
+                            </div>
+                            <div class="preview-flow">
+                                <div class="flow-step"><i class="fa-solid fa-store"></i> Woo / VTEX</div>
+                                <i class="fa-solid fa-arrow-right flow-arrow"></i>
+                                <div class="flow-step active"><i class="fa-solid fa-microchip"></i> Agente IA</div>
+                                <i class="fa-solid fa-arrow-right flow-arrow"></i>
+                                <div class="flow-step"><i class="fa-solid fa-bag-shopping"></i> Checkout</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Boopay — Commerce Conversacional</h3>
+                        <p>Plataforma multiloja que integra catálogos WooCommerce, Shopify e VTEX a agentes de IA para recomendação de produtos, cotação autoritativa, checkout conversacional e perfil 360.</p>
+                        <div class="portfolio-stack">
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">Prisma</span>
+                            <span class="tech-badge">WooCommerce</span>
+                            <span class="tech-badge">IA</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/Pedro-Lucas001/boopay" target="_blank" rel="noopener noreferrer" class="link-project link-primary">
+                                <i class="fa-brands fa-github"></i> Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 4: HalfyWay (teste-halfyway) -->
+                <article class="portfolio-item">
+                    <div class="portfolio-img cover-halfyway">
+                        <div class="portfolio-cover-top">
+                            <span class="tag-tech">Recrutamento & Bot</span>
+                            <span class="project-status status-live"><span class="status-dot"></span> Online</span>
+                        </div>
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-bar">
+                                <span class="preview-title"><i class="fa-solid fa-briefcase"></i> halfyway · Career Score</span>
+                                <span class="preview-pill accent-green">Chatbot Py</span>
+                            </div>
+                            <div class="preview-score">
+                                <div class="score-badge">85%</div>
+                                <div class="score-stats">
+                                    <span><strong>12</strong> Enviadas</span>
+                                    <span><strong>5</strong> Triagem</span>
+                                    <span><strong>3</strong> Entrevistas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>HalfyWay — Carreiras & Recrutamento</h3>
+                        <p>Plataforma web para candidatos e empresas com Global Career Score, gestão completa de vagas e candidaturas, painéis segmentados e assistente chatbot desenvolvido em Python.</p>
+                        <div class="portfolio-stack">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Chatbot</span>
+                            <span class="tech-badge">CSS3</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://teste-halfway.vercel.app" target="_blank" rel="noopener noreferrer" class="link-project link-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Sistema
+                            </a>
+                            <a href="https://github.com/Pedro-Lucas001/teste-halfyway" target="_blank" rel="noopener noreferrer" class="link-project github-link">
+                                <i class="fa-brands fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="portfolio-footer">
+                <a href="https://github.com/Pedro-Lucas001?tab=repositories" target="_blank" rel="noopener noreferrer" class="glass-btn">
+                    <i class="fa-brands fa-github"></i> Ver todos os repositórios no GitHub
+                </a>
             </div>
         </div>
     </section>
